@@ -10,10 +10,10 @@ int main() {
 	{6, 3, 9, 2, 7, 4},
 	{10, 12, 14, 7, 3, 2}
     };
-    for (int j = 0; j < n; ++j) {
+    for (int j = 0; j < n; j++) {
 	int sum = 0;
 
-	for (int i = 0; i < m; ++i) {
+	for (int i = 0; i < m; i++) {
 	    sum += matrix[i][j];
 	}
 	cout << "Сума елементів у стовпчику " << j + 1 << ": " << sum << endl;
