@@ -36,7 +36,7 @@ int main() {
     int totalMinutes = startTime.hours * 60 + startTime.minutes + elapsedTime.minutes;
 
     Time resultTime;
-    resultTime.hours = (totalMinutes / 60) % 24;
+    resultTime.hours = (totalMinutes / 60);
     resultTime.minutes = totalMinutes % 60;
 
     cout << "New time: ";
