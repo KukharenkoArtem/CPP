@@ -11,8 +11,8 @@ int main() {
     int minElement = mas[0][0];
     int minRow = 1, minColumn = 1;
 
-    for (int row = 0; row < m; ++row) {
-        for (int column = 0; column < n; ++column) {
+    for (int row = 0; row < m; row++) {
+        for (int column = 0; column < n; column++) {
             if (mas[row][column] < minElement) {
                 minElement = mas[row][column];
                 minRow = row + 1;
