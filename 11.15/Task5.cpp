@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     const int m = 4;
-    const int n = 7;
+    const int n = 3;
 
     int mas[m][n] = {{28, 11, 88, 34}, {4, 50, 17, 9}, {3, 128, 19, 72}};
 
