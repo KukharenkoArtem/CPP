@@ -43,7 +43,7 @@ int main() {
 
     int totalStartMinutes = startTime.hours * 60 + startTime.minutes;
     int totalEndMinutes = endTime.hours * 60 + endTime.minutes;
-    int durationMinutes = (totalEndMinutes - totalStartMinutes + 24 * 60);
+    int durationMinutes = (totalEndMinutes - totalStartMinutes + 24 * 60)%(24*60);
 
     Date durationTime;
     durationTime.hours = durationMinutes / 60;
