@@ -12,9 +12,9 @@ int main() {
 	{17, 16, 8, 22}
     };
 
-    for (int j = 0; j < n; ++j) {
+    for (int j = 0; j < n; j++) {
 	int countEven = 0;
-	for (int i = 0; i < m; ++i) {
+	for (int i = 0; i < m; i++) {
 	    if (matrix[i][j] % 2 == 0) {
 		countEven++;
 	    }
