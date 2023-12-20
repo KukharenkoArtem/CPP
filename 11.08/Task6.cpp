@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int size = 5;
+    int arr[size];
+    bool foundZero = false;
+
+    cout << "Enter " << size << " integers: ";
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+    }
+
+    int zeroIndex = -1;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == 0) {
+            zeroIndex = i;
+            foundZero = true;
+            break;
+        }
+    }
+    if (foundZero) {
+        cout << "The first zero element is at index " << zeroIndex << endl;
+    } else {
+        cout << "The array does not contain any zero elements." << endl;
+    }
+}
