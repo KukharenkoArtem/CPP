@@ -13,7 +13,7 @@ int main() {
     int sumMainDiagonal = 0;
     int sumSecondaryDiagonal = 0;
 
-    for (int i = 0; i < m; ++i) {
+    for (int i = 0; i < m; i++) {
         sumMainDiagonal += matrix[i][i];
         sumSecondaryDiagonal += matrix[i][m - i - 1];
     }
