@@ -14,15 +14,13 @@ int main() {
         {1, 0, 11, 13, 5, 6, 2}
     };
 
-    for (int i = 0; i < m; ++i) {
+    for (int i = 0; i < m; i++) {
         int sum = 0;
 
-        for (int j = 0; j < n; ++j) {
+        for (int j = 0; j < n; j++) {
             sum += matrix[i][j];
         }
 
         cout << "Сума елементів у рядку " << i + 1 << ": " << sum << endl;
     }
-
-    return 0;
 }
