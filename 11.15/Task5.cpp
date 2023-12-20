@@ -11,8 +11,8 @@ int main() {
     int maxElement = mas[0][0];
     int maxRow = 1, maxColumn = 1;
 
-    for (int row = 0; row < m; ++row) {
-        for (int column = 0; column < n; ++column) {
+    for (int row = 0; row < m; row++) {
+        for (int column = 0; column < n; column++) {
             if (mas[row][column] > maxElement) {
                 maxElement = mas[row][column];
                 maxRow = row + 1;
