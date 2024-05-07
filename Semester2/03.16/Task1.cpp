@@ -3,9 +3,9 @@ using namespace std;
 
 bool isLeap(int year) {
     if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-        return true; // Високосний рік
+        return true;
     } else {
-        return false; // Невисокосний рік
+        return false;
     }
 }
 
@@ -36,7 +36,7 @@ int monthLength(int year, int month) {
         case 12:
             return 31;
         default:
-            return -1; // Неправильний номер місяця
+            return -1;
     }
 }
 
