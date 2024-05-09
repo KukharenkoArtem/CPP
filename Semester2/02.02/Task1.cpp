@@ -14,7 +14,7 @@ int main(void) {
             maxPtr = ptr + i;
         }
     }
-        cout << "Maximum element is: " << *maxPtr << " in our array." << endl;
+        cout << "Максимальний елемент масиву: " << *maxPtr << endl;
 
     return 0;
 }
