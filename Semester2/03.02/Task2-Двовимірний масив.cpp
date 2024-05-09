@@ -38,8 +38,8 @@ int main() {
   }
 
   int evenCount = 0, oddCount = 0;
-  for (int i = 0; i < rows; ++i) {
-    for (int j = 0; j < cols; ++j) {
+  for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
       if (matrix[i][j] % 2 == 0) {
         evenCount++;
       } else {
@@ -51,7 +51,7 @@ int main() {
   cout << "\nКількість парних елементів: " << evenCount << endl;
   cout << "Кількість непарних елементів: " << oddCount << endl;
 
-  for (int i = 0; i < rows; ++i) {
+  for (int i = 0; i < rows; i++) {
     delete[] matrix[i];
   }
   delete[] matrix;
