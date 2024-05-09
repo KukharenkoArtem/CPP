@@ -8,7 +8,6 @@ int main() {
   const int rows = 3;
   const int cols = 3;
 
-  // Динамічне виділення пам'яті для масиву
   int** matrix = new int*[rows];
   for (int i = 0; i < rows; i++) {
     matrix[i] = new int[cols];
