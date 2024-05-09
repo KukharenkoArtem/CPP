@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-  // Розмір масиву
   const int rows = 3;
   const int cols = 3;
 
