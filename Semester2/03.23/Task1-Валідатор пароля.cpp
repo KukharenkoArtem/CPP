@@ -40,10 +40,10 @@ int main() {
             cout << " - Password must contain at least 1 lowercase letter." << endl;
         }
         if (!hasDigit) {
-            cout << " - Password must contain at least 1 number." << endl;
+            cout << " - Password must contain at least 1 digit." << endl;
         }
         if (!hasSpecialChar) {
-            cout << " - Password must contain at least 1 speciak symbol." << endl;
+            cout << " - Password must contain at least 1 special character." << endl;
         }
     }
 
