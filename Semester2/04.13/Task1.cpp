@@ -13,10 +13,6 @@ public:
     ShopItemOrder(const string& name = "", double price = 0.0, int qty = 1)
         : itemName(name), unitPrice(price), quantity(qty) {}
 
-    string getItemName() const { return itemName; }
-    double getUnitPrice() const { return unitPrice; }
-    int getQuantity() const { return quantity; }
-
     void setItemName(const string& name) { itemName = name; }
     void setUnitPrice(double price) { unitPrice = price; }
     void setQuantity(int qty) { quantity = (qty > 0) ? qty : 1; }
