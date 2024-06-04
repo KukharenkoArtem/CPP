@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdexcept>  // Include for runtime_error
+#include <stdexcept>
 
 using namespace std;
 
@@ -14,7 +14,7 @@ int main(void) {
             throw runtime_error("Division by zero is not allowed!");
         }
 
-        int b = a / c;  // We can now safely calculate b
+        int b = a / c;
         cout << "Result: " << b << endl;
     } catch (const runtime_error& ex) {
         cerr << "Error: " << ex.what() << endl;
