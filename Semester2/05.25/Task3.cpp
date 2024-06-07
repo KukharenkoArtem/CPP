@@ -8,7 +8,6 @@ float internaldiv(float arg1, float arg2) {
         return arg1 / arg2;
     } catch (const runtime_error& ex) {
         cerr << "Error: " << ex.what() << endl;
-        cerr << "Reason: Division by zero is not allowed." << endl;
         throw;
     }
 }
