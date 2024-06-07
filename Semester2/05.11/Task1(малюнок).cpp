@@ -3,7 +3,7 @@
 
     class Tree {
     public:
-        virtual void draw() = 0; // Virtual method (to be overridden)
+        virtual void draw() = 0;
     };
 
     class PineTree : public Tree {
@@ -34,19 +34,16 @@
     };
 
     int main() {
-        Tree* treeArray[3]; // Array of pointers to Tree objects
+        Tree* treeArray[3];
 
-        // Create instances of different trees
         PineTree pineTree;
         ChristmasTree christmasTree;
         BirchTree birchTree;
 
-        // Assign pointers to the respective objects
         treeArray[0] = &pineTree;
         treeArray[1] = &christmasTree;
         treeArray[2] = &birchTree;
 
-        // Call the draw method for each tree
         for (int i = 0; i < 3; ++i) {
             treeArray[i]->draw();
         }
