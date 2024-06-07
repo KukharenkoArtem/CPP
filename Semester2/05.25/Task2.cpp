@@ -17,7 +17,6 @@ int main(void) {
         cout << "Result: " << c << endl;
     } catch (const runtime_error& ex) {
         cerr << "Error: " << ex.what() << endl;
-        cerr << "Reason: Division by zero is not allowed." << endl;
     }
 
     return 0;
